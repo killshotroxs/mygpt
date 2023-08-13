@@ -15,7 +15,7 @@ const API_KEY = import.meta.env.VITE_APP_API_KEY;
 const systemMessage = {
   role: "system",
   content:
-    "Start a story based on the word entered, do not say anything else, just start a short story as soon as i give you the word.",
+    "Start a story based on the word entered, do not say anything else, just start a short story as soon as i give you the word, make sure the story is targeted for kids aged 7 to 15.",
 };
 
 function App() {
@@ -83,19 +83,9 @@ function App() {
       });
   }
 
-  return (
-    <div
-      className="app-container"
-      style={{ display: "grid", gridTemplateColumns: "1fr" }}
-    >
-      <div
-        style={{
-          position: "relative",
-          height: "600px",
-          maxWidth: "700px",
-          margin: "0 auto",
-        }}
-      >
+   return (
+    <div className="app-container" style={{ display: "grid", gridTemplateColumns: "1fr" }}>
+      <div style={{ position: "relative", height: "600px", maxWidth: "700px", margin: "0 auto" }}>
         <MainContainer>
           <ChatContainer>
             <MessageList
