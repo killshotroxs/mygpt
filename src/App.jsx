@@ -21,7 +21,7 @@ const systemMessage = {
 function App() {
   const [messages, setMessages] = useState([
     {
-      message: "Hello, I'm KilluGPT-3.5! Ask me anything!",
+      message: "Hello, I am an Story Generator based on AI, enter a word and press the icon on the right to generate a random story...",
       sentTime: "just now",
       sender: "ChatGPT",
     },
@@ -83,9 +83,19 @@ function App() {
       });
   }
 
-   return (
-    <div className="app-container" style={{ display: "grid", gridTemplateColumns: "1fr" }}>
-      <div style={{ position: "relative", height: "600px", maxWidth: "700px", margin: "0 auto" }}>
+  return (
+    <div
+      className="app-container"
+      style={{ display: "grid", gridTemplateColumns: "1fr" }}
+    >
+      <div
+        style={{
+          position: "relative",
+          height: "600px",
+          maxWidth: "700px",
+          margin: "0 auto",
+        }}
+      >
         <MainContainer>
           <ChatContainer>
             <MessageList
@@ -101,7 +111,7 @@ function App() {
                 return <Message key={i} model={message} />;
               })}
             </MessageList>
-            <MessageInput placeholder="Type message here" onSend={handleSend} />
+            <MessageInput placeholder="Type a word and click icon on the right, Eg: Elephant " onSend={handleSend} />
           </ChatContainer>
         </MainContainer>
       </div>
