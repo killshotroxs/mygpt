@@ -11,7 +11,7 @@ import {
 } from "@chatscope/chat-ui-kit-react";
 
 const API_KEY = import.meta.env.VITE_APP_API_KEY;
-
+//keys updated
 const systemMessage = {
   role: "system",
   content:
