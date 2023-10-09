@@ -15,7 +15,7 @@ const API_KEY = import.meta.env.VITE_APP_API_KEY;
 const systemMessage = {
   role: "system",
   content:
-    "Start a story based on the word entered, do not say anything else, just start a short story as soon as i give you the word, make sure the story is targeted for kids aged 7 to 15.",
+    "Start a story based on the word entered, do not say anything else, just start a short story as soon as i give you the word, make sure the story is targeted for kids aged 7 to 15 and it must be under 100 words.",
 };
 
 function App() {
